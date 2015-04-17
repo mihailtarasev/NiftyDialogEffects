@@ -165,6 +165,13 @@ public class NiftyDialogBuilder extends Dialog implements DialogInterface {
         mMessage.setTextColor(Color.parseColor(defMsgColor));
         mLinearLayoutView.setBackgroundColor(Color.parseColor(defDialogColor));
     }
+
+    public void toImageView(){
+        mTitle.setTextColor(Color.parseColor(defTextColor));
+        mDivider.setBackgroundColor(Color.parseColor(defDividerColor));
+        mMessage.setTextColor(Color.parseColor(defMsgColor));
+        mLinearLayoutView.setBackgroundColor(Color.parseColor(defDialogColor));
+    }
     
     public NiftyDialogBuilder withDividerColor(String colorString) {
         mDivider.setBackgroundColor(Color.parseColor(colorString));
